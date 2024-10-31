@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SİBER ZORBALIK</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+        header {
+        background-color: #6f42c1; /* Başlık arka plan rengi */
+        color: #fff; /* Yazı rengi */
+        padding: 5px 0;
+        /* margin-bottom: 5px; */
+      }
+      h2 {
+        color: #6f42c1; /* Başlık rengi */
+        font-size: 2 rem; /* Başlık boyutu */
+        text-align: center; /* Başlık ortalama */
+        margin-bottom: 20px;
+      }
+      .nav-link,
+      .dropdown-item {
+        color: rgb(0, 0, 0); /* Varsayılan renk  */
+        transition: color 0.3s ease; /* Renk değişimi geçişi yumuşak olsun */
+      }
+
+      /* Fare ile üzerine gelindiğinde */
+      .nav-link:hover,
+      .dropdown-item:hover {
+        color: rgb(0, 179, 255); /* Üzerine gelindiğinde  */
+      }
+
+      /* Linke tıklandığında (aktif durumda) */
+      .nav-link:active,
+      .dropdown-item:active {
+        color: red; /* Tıklandığında kırmızı */
+      }
+
+      /* Link odaklandığında (örn. klavye ile) */
+      .nav-link:focus,
+      .dropdown-item:focus {
+        color: rgb(1, 254, 14); /* Odaklandığında */
+      }
+    </style>
+    <style>
+      .video-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* 3 sütun oluşturur */
+          gap: 10px; /* Videolar arasında boşluk bırakır */
+          justify-items: center; /* Videoları yatayda ortalar */
+      }
+      iframe {
+          width: 400px;
+          height: 225px;
+      }
+  </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header style="background-color: rgb(223, 250, 255);" class="text-dark text-center p-2 text-sm">
+        <h1 class="fs-10 fst-italic font-monospace">Yardımcı Kaynaklar</h1>
+    </header>
+    <!--NAVBAR-->
+    <nav
+    class="navbar navbar-expand-lg navbar-light"
+    style="background-color: #fff"
+  >
+    <div class="container-fluid">
+      <div class="img float-left">
+        <img src="./images/logo2.png" alt="" width="50" height="50" />
+      </div>
+      <a
+        class="navbar-brand"
+        style="display: flex; align-items: center"
+        href="projeson.html"
+        ><i class="fas fa-home"></i
+      ></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Siber Zorbalık
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="siberzorbalik.html">Siber Zorbalık Nedir?</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="siberzorbalikmagdur.html"
+                  >Siber Zorbalığa Maruz Kalınca Ne Yapmalıyız?</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="yardimcikaynaklar.html">Yardımcı Kaynaklar</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="playgame.html">Siber Oyun</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="movies.html">Siber Zorbalık Konulu Filmler</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--MAKALELER-->
+<div class="container">
+    <h1 style="text-align: center;">Makaleler</h1>
+    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            LİSE ÖĞRENCİLERİNDE DİJİTAL OYUN BAĞIMLILIĞI VE SİBER ZORBALIK  
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Bu araştırmanın amacı, lise öğrencilerinin dijital oyun bağımlılığı ve siber 
+            zorbalık düzeyleri arasındaki ilişkiyi incelenmektir. Ayrıca bu amaç doğrultusunda 
+            dijital oyun bağımlılığı ve siber zorbalık, bazı sosyo-demografik (cinsiyet, sınıf, 
+            annenin eğitim durumu, oynadığı dijital oyun türleri, oyun oynama süreleri, 
+            bilgisayar, tablet, cep telefonuna sahip olma durumları ve internete bağlanma 
+            süreleri) değişkenlere göre incelenmiştir. İlişkisel tarama modeli ile yapılan 
+            araştırmaya 2022-2023 eğitim öğretim yılı Van ilinde öğrenim gören 665 lise 
+            öğrencisi katılmıştır. Araştırmanın verileri Irmak ve Erdoğan tarafından geliştirilen 
+            Dijital Bağımlılık Ölçeği, Küçük, İnanıcı ve Ziyalar tarafından geliştirilen Siber 
+            Zorbalık Ölçeği ve Kişisel Bilgi Formu kullanılarak elde edilmiştir. Verilerin 
+            analizinde; Aritmetik Ortalama, Standart Sapma, Bağımsız t testi, tek yönlü varyans 
+            analizi (ANOVA), Pearson Korelasyon Katsayısı kullanılmıştır. Araştırma 
+            sonuçlarına göre lise öğrencilerinin dijital oyun bağımlılık düzeyleri ile siber zorbalık 
+            düzeyleri arasında orta düzeyde pozitif ve anlamlı bir ilişki olduğu belirlenmiştir. Lise 
+            öğrencilerinin dijital oyun bağımlılık düzeyleri; cinsiyetlerine, günlük oyun oynama 
+            süresine, dijital oyun türleri oynama durumuna göre anlamlı farklılık gösterdiği, sınıf 
+            kademesi, annenin eğitim düzeyi göre anlamlı bir fark bulunmadığı belirlenmiştir. 
+            Lise öğrencilerin siber zorbalık düzeylerinin sınıf, günlük internete bağlanma süresi, 
+            cep telefonu ve bilgisayara sahip olma durumuna göre anlamlı farklılık gösterdiği, 
+            cinsiyet, tablete sahip olma durumuna göre anlamlı bir fark bulunmadığı 
+            belirlenmiştir.
+            <br><br>
+            <a href="./makaleler/835454.pdf" class="btn btn-primary">Devamını Oku</a></div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            SOSYAL MEDYA KULLANAN BİREYLERİN SİBER ZORBALIK DENEYİMLERİNİN İNCELENMESİ
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Bu çalışma, günümüzde sosyal medyayı aktif olarak kullanan bireylerin siber 
+            zorbalığa maruz kalma, tanık olma ve bu davranışı sergileme deneyimlerinin 
+            incelenmesi amacıyla yapılmıştır. Çalışma tanımlayıcı nitelikte olup, anket 
+            sorularından paylaşılabilir bir bağlantı oluşturularak online ortamda, Türkiye 
+            genelinde uygulanmıştır. Veriler Kişisel Bilgi Formu ve Siber Zorbalık Üçgeni 
+            Ölçeği kullanılarak toplanmıştır. Bulguların yorumlanmasında frekans tabloları ve 
+            tanımlayıcı istatistikler kullanılmıştır. 
+            <br><br>
+              Araştırmaya katılan bireylerin %58’inin kadın olduğu, % 37,6’sının 25-34 
+            yaş aralığında olduğu, %98,3’ünün aktif sosyal medya kullanıcısı olduğu ve 
+            %53,3’ünün günde ortalama 2-4 saat arası sosyal medyada zaman geçirdiği, 
+            %77,3’ünün siber zorbalığa maruz kaldığı, %72,9’unun bu sebeple sosyal medya 
+            kullanımını bıraktığı, %53,1’inin siber zorbalığa tanık olduğu ve %94,1’inin siber 
+            zorbalığın kötü olduğunu düşündüğü belirlenmiştir. Erkeklerin kadınlara göre siber 
+            zorba, siber mağdur ve siber seyirci puanları yüksek bulunmuştur. Ayrıca siber 
+            mağduriyet yaşayan ve siber zorbalık yapanların, siber mağduriyet, siber zorbalık ve 
+            siber seyirci puanları anlamlı düzeyde yüksektir. Siber zorbalık ile siber mağduriyet 
+            arasında (r=0,332; p=0,000), siber seyirci ile siber mağduriyet ve siber zorbalık 
+            arasında ve SZÜÖ – toplam puanları ile siber mağduriyet, siber zorbalık ve 
+            siber seyirci arasında pozitif yönde ilişki tespit edilmiştir.
+            <br><br>
+              Bu sonuçlar doğrultusunda; bireylere siber zorbalığın önlenmesine yönelik, 
+            riskli internet kullanımı ve teknolojinin doğru kullanımı konularında eğitim 
+            verilmelidir. Aynı zamanda ailelere, örnek olma, kural koyma, filtreleme programı 
+            uygulama, çevrimiçi davranış kuralları ve zorba-mağdur çocuk ile iletişim 
+            konularında destek olunmalıdır. Bireylere, empati yeteneğini geliştirmeye yönelik 
+            eğitim verilerek öfke kontrol becerisi kazandırılmalıdır. Siber zorbalığa maruz 
+            kaldıklarında izleyecekleri adımlar hakkında bilgi verilmelidir. Yasal yaptırımlar 
+            siber zorbalık üzerinde her ne kadar etkili olsa da, olaya ilişkin farkındalığı arttırmak 
+            için kişilerin içinde bulunduğu yaş grubu ve gelişim düzeyine göre bütüncül çalışma 
+            planlanarak yürütülmesi önerilmektedir.
+            <br><br>
+            <a href="./makaleler/790075.pdf" class="btn btn-primary">Devamını Oku</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            TÜRKİYE’DE SİBER ZORBALIK VE SİBER FARKINDALIĞA YÖNELİK YAPILAN ÇALIŞMALAR VE EĞİTSEL FAALİYETLERİN İNCELENMESİ
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Günümüzün sanal tehlikelerinden biri olarak nitelendirebileceğimiz siber zorbalık kavramı, teknolojinin 
+            yaygın kullanımıyla sıklıkla karşımıza çıkmaktadır. Siber zorbalığa karşı farkındalık oluşturmak, bireyleri siber 
+            zorbalığın tehlikeleri konusunda bilinçlendirmek ve onları koruyucu önlemler almaya teşvik etmek ya da siber 
+            zorba olma yönelimlerinin zararlarına karşı bilinç kazanılması açısından önemlidir. Bu nedenle eğitim 
+            kurumlarında, aile içinde ve toplum genelinde siber zorbalıkla ilgili bilinçlendirmeye yönelik çalışmalara ve bilgi 
+            paylaşımlarına yer verilmesi gerekliliği ortaya çıkmaktadır. Bu konulara akademik çalışmalarda da sıklıkla yer 
+            verilmesi gereklidir. Bu sayede, herkesin dijital ortamda güvende olması ve siber zorbalığın kişilerde 
+            oluşturabileceği etkilerden korunmanın sağlanabileceği düşünülmektedir.  
+            <br><br>
+            Bu araştırmada siber zorbalık ve siber farkındalık ile ilgili yapılan çalışmalara ve eğitsel faaliyetlere 
+            yönelik incelemeler yapılmıştır. Araştırmanın amacı, teknoloji kullanımına önem verilen çağımızda dijital 
+            ortamları aktif olarak kullanan kişilere yönelik Türkiye’de siber zorbalık ve siber farkındalık üzerine yapılan 
+            çalışmalar ve eğitsel faaliyetlerin değerlendirmesini yapmaktır. Nicel araştırma yöntemi ile yapılan bu çalışmada 
+            tarama modeli kullanılmıştır. 
+            <br><br> 
+            Son yıllarda teknoloji kullanımı alanları ve çevrim içi platformların kullanımındaki artışlar, sosyal medya 
+            platformlarının bu yıllarda çeşitliliğinin artması, kullanıcı profillerinin küçük yaşlara kadar inmesi göz önünde 
+            bulundurularak 2015- 2023 yılları arasındaki çalışmalar ve bazı kurumlarca yapılan eğitsel faaliyetler 
+            incelenmiştir. Araştırma konusunu içeren akademik çalışmalar Yükseköğretim Kurulu Başkanlığı tez merkezi ve 
+            Google Akademik veri tabanlarında erişime açık yüksek lisans ve doktora tezleri ile diğer akademik çalışmalardan 
+            oluşmuştur. Konu ile ilgili toplam 75 akademik çalışma, araştırmada oluşturulan alt amaçlara göre detaylı olarak 
+            incelenmiştir.  
+            <br><br>
+            Araştırmada veri toplama aracı olarak çalışma tarama formu oluşturulmuştur. Araştırmaya dahil edilen 
+            75 akademik çalışma tek tek incelenerek bu forma işlenmiştir. Çalışma tarama formunda her çalışma 
+            numaralandırılarak verilerin analizinde çalışma numaralarına göre açıklamalar yapılmıştır. Verilerin analizinde 
+            yüzde (%) ve frekans (N) gibi tanımlayıcı istatistikler kullanılmıştır. Analizden edilen sonuçlar ile yapılan 
+            önerilerin kategorileştirilmesi için içerik analizine başvurulmuş, sonuçlar yine betimsel istatistikler şeklinde 
+            sunulmuştur. 
+            <br><br> 
+            Araştırma sonunda, incelenen çalışmalardan elde edilen veriler ve sonuçlara göre akademik çalışmalara 
+            yönelik önerilerde bulunulmuştur.
+            <br><br>
+            <a href="./makaleler/870913.pdf" class="btn btn-primary">Devamını Oku</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            GENÇ YETİŞKİNLERDE TEKNOLOJİ BAĞIMLILIĞI VE DÜRTÜSELLİĞİN SİBER ZORBALIK ÜZERİNDEKİ YORDAYICI ETKİSİNİN İNCELENMESİ
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            İnsanlık tarihi boyunca alkol, kumar, uyuşturucu madde gibi pek çok bağımlılıkla karşılaşmış ve 
+            bunların olumsuz etkileri ile mücadele edebilmek için çalışmalar geliştirmiştir. Günümüzün son 20-30 
+            yıllık döneminde ortaya yeni bir bağımlılık türü ortaya çıkmıştır. Bu yeni bağımlılık teknoloji bağımlılığı 
+            olarak adlandırılmaktadır. Teknoloji ve internetin gelişmesiyle birlikte sosyal medya bağımlılığı, anlık 
+            mesajlaşma bağımlılığı, dijital oyun bağımlılığı gibi alt boyutlara sahip olan teknoloji bağımlılığı da her 
+            bağımlılık davranışında olduğu gibi olumsuz bazı sonuçlara neden olabilmektedir. Bu çalışmada genç 
+            yetişkinlerde teknoloji bağımlılığı ve dürtüselliğin siber zorbalık üzerindeki yordayıcı etkisinin incelenmesi 
+            amaçlanmıştır. Araştırma nicel araştırmalardan korelasyonel desen kullanılarak gerçekleştirilmiştir. 
+            Araştırmanın verileri Google Forms aracılığıyla toplanmıştır. Araştırma verilerinin toplanmasında 
+            Teknoloji Bağımlılığı Ölçeği, Siber Zorbalık Ölçeği, Siber Mağduriyet Ölçeği ve Barrat Dürtüsellik Ölçeği 
+            kullanılmıştır. Araştırmanın örneklemini 18 - 30 yaş arası 468 kişi oluşturmuştur. Araştırma verilerinin 
+            analizinde SPSS 21.0 programı kullanılmıştır. Araştırma sonucunda teknoloji bağımlılığının erkeklerde 
+            kadınlardan daha fazla olduğu, siber mağduriyete kadınların daha fazla maruz kaldıkları, yaşa göre 
+            teknoloji bağımlılığının anlamlı bir şekilde farklılaşmadığı görülmüştür. Eğitim düzeyi arttıkça teknoloji 
+            bağımlılığının, dürtüselliğin ve siber zorbalığın azaldığı da tespit edilmiştir. Teknoloji bağımlılığın ve 
+            dürtüselliğin zorbalığı artırdığı görülmüştür. Dürtüselliğe ve bağımlılığa yatkın olan risk grupları 
+            belirlenerek özellikle dürtüselliğin ve bağımlılığın kontrol altına alınmasına yönelik çalışmalara ağırlık 
+            verilerek oluşabilecek siber zorbalığın önlenmesine katkıda bulunulabilir. Bu gruplara ve kamuya yönelik  
+            teknolojinin doğru ve yerinde kullanımıyla ilgili bilgilendirilmelerin arttırılması, okullarda siber zorbalığa 
+            ve teknolojinin kullanımıyla ilgili bilgilendirilmelere daha fazla yer verilmesi ve siber zorbalığı önlemek 
+            amacıyla çocuklara okul öncesi dönemden itibaren duygu eğitimi verilmesi ve empatiyi geliştirecek 
+            aktiviteler düzenlenmesi,  
+            dürtülerin kontrolüne yönelik davranış beceri eğitimlerinin arttırılması 
+            önerilebilir. 
+            <br><br>
+            <a href="./makaleler/877979.pdf" class="btn btn-primary">Devamını Oku</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            ORTAOKUL ÖĞRENCİLERİNDE SİBER ZORBALIK VE 
+            SOSYAL MEDYA BAĞIMLILIĞININ DEPRESYON İLE 
+            İLİŞKİSİ
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+                    Bu çalışmada “Ortaokul Öğrencilerinde Siber Zorbalık ve Sosyal Medya 
+            Bağımlılığının Depresyon ile İlişkisi” araştırılmak istenmiştir. Nicel yöntemlerle 
+            gerçekleştirilen araştırma, Tekirdağ ilinde 5., 6., 7. ve 8. sınıfta 2023 yılında öğrenim 
+            gören öğrencilerden toplam 443 katılımcı ile yürütülmüştür. Çalışma grubunun 216’sı 
+            (%48.8) kız ve 227 (%51.2) erkek öğrencilerden oluşmaktadır. Araştırmada, “Kişisel 
+            Bilgi Formu”, “Ergenler İçin Sosyal Medya Ölçeği”, “Siber Zorbalık Ölçeği” ve 
+            “Çocuklar İçin Depresyon Ölçeği” kullanılmıştır. Ölçeklerden elde edilen verilerin 
+            analizi sonucunda verilerin normal dağılmadığı tespit edilmiştir. Nonparametrik 
+            testlerin daha doğru sonuçlar verebileceği değerlendirilmiştir. Bundan dolayı “U
+            Mann Whitney U testi”, Kruskall Wallis H testi ve Games-Howell testleri kullanılarak 
+            çoklu regresyon analizi ve korelasyon değerleri ile yüzde, frekans, standart sapma, 
+            ortalama değerleri de dikkate alınmıştır. 
+            <br><br>
+            Araştırma bulgularına göre ortaokul düzeyindeki öğrencilerin siber zorbalık ve sosyal 
+            medya bağımlılık düzeyleri düşük bulunurken, depresyon seviyelerinin orta düzeyde 
+            tespit edilmiştir. Temel probleme bağlı oluşturulan alt problem bulguların da ise, siber 
+            zorbalık, sosyal medya bağımlılığı ve depresyon ölçeklerinde anlamlı farklılıkların; 
+            cinsiyet, sınıf düzeyleri, günlük sosyal medyada geçirilen süre, sosyal medyaya 
+            girildiğinde harcanan süre, kişisel cep telefonu ya da tableti olup olmama ve sosyal 
+            medya hesabı olup olmama yönünden karşılaştırılması sonucunda ortaya çıktığı bu 
+            araştırmada tespit edilmiştir. Ayrıca siber zorbalık, sosyal medya bağımlılığı ve 
+            depresyon düzeyleri arasında orta düzeyde ilişki olduğu ve siber zorbalık, sosyal 
+            medya bağımlılığı davranışlarının depresyon düzeyinin pozitif  yordayıcıları olduğunu  
+            tespit edilmiştir.
+            <br><br>
+            <a href="./makaleler/889074.pdf" class="btn btn-primary">Devamını Oku</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            ÇEVİRİMİÇİ ORTAMLARDA SİBER ZORBALIK KARŞISINDA VERİLEN TEPKİLERİN İNCELENMESİ
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+                İnternet ve bilgi iletişim teknolojilerinin kullanımının yaygınlaşması iletişim 
+            kurma ve sosyalleşme biçimlerini değiştirmiştir. Çevrimiçi ortamlar ve dijital 
+            platformların kullanımının artmasıyla birlikte, siber zorbalık toplumsal bir sorun haline 
+            gelmiştir. Siber zorbalık hem ulusal hem de uluslararası bir sorun olarak 
+            tanımlanmaktadır. Bu araştırma üniversite öğrencilerinin siber zorbalık karşısında 
+            verdiği davranışsal ve duygusal tepkileri değişkenlere göre incelemek amacıyla 
+            yapılmıştır. Tarama modeli kullanılarak 2022-2023 Bahar dönemi ve 2023-2024 Güz 
+            döneminde eğitim öğretim yılında Eskişehir ilindeki Anadolu Üniversitesi öğrenim 
+            gören 497 öğrenci ile yapılmıştır. Veri toplama aracı olarak “Siber Zorbalık Karşısında 
+            Verilen Tepkiler Ölçeği” kullanılmıştır. Veri analizinde normallik dağılımı dikkate 
+            alınarak Man Whitney U testi ve Kruskal Wallis H testleri kullanılmıştır. Araştırma 
+            sonucunda siber zorbalık karşısında verilen tepkilerin alt boyutları ile cinsiyet ve fakülte 
+            değişkenlerine göre anlamlı farklılık gösterdiği fakat yaş ve günlük internet kullanım 
+            süresi değişkeninde anlamlı bir farklılık göstermediği saptanmıştır. Cinsiyet değişkenine 
+            göre erkeklerin intikam puanı, kadınların ise önlem, kaçınma ve içselleştirme puanları 
+            yüksek olduğu saptanmıştır. Fakülte değişkenine göre Eğitim Bilimleri Fakültesi ve 
+            Sağlık Bilimleri Fakültesinin diğer fakültelere göre içselleştirme puanlarının yüksek 
+            olduğu saptanmıştır. 
+            <br><br>
+            <a href="./makaleler/891924.pdf" class="btn btn-primary">Devamını Oku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<br><br>
+<!-- EBA Siber Zorbalık ve Siber Güvenlik ile İlgili Videolar -->
+<div class="container">
+  <h1 style="text-align: center;">EBA Siber Zorbalık ve Siber Güvenlik ile İlgili Videolar</h1>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/X3-ltwWtOF0?si=gS7x8RteG0SfmTeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/UURptlUUQR4?si=6-8IXro5bG4XK8gG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/UZuLQ5CNS-o?si=B12fqMP6x9lBN38F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+<br><br>
+<!-- Ek Videolar -->
+<div class="container">
+  <h1 style="text-align: center;">Ek Videolar</h1>
+  <div class="video-container">
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/k4FF7KS6cZ0?si=pTCOqCmUVpILsoc-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/tGXWHz8B1yo?si=aEh2nEzp3l5Vr99J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/JK5-8CsenFg?si=d-paUmK_NpIep532" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/3jjwfjWJkPs?si=_xqzOM-9DqJjYelf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N87aNk5Uohg?si=Xhz7ga9rX1WpZEky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jyTG2bPEZ2I?si=_kpIUZXD7Cghom4z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div> 
+</div>
+<br><br>
+<!-- Diğer Kaynaklar -->
+<div class="container">
+  <h1 style="text-align: center;">Diğer Kaynaklar</h1>
+  <div class="container my-5">
+    <!-- 'container' sınıfı sayfa kenarlarına boşluk ekler -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./images/rehber.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ÇOCUKLAR VE GENÇLER İÇİN SİBER ZORBALIK REHBERİ</h5>
+            <p class="card-text">
+
+            </p>
+            <a href="https://genchayat.org/wp-content/uploads/2021/05/C%CC%A7ocukGencSiberZorbalikRehberi.pdf" class="btn btn-primary">OKU</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./images/sibzoran.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Siber Zorbalık Animasyon</h5>
+            <p class="card-text">
+
+            </p>
+            <a href="https://youtu.be/9_QlthlI1HA?si=WS-YkRl-YUzTqoyZ" class="btn btn-primary">İZLE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./images/siberay2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">SİBERAY</h5>
+            <p class="card-text">
+              Siberay, Emniyet Genel Müdürlüğü Siber Suçlarla Mücadele Daire Başkanlığı bünyesinde Ocak 2020'de teknoloji bağımlılığını ve siber zorbalığın önüne geçmek, 
+              güvenli ve bilinçli internet kullanımını sağlamak amacıyla; maddi gelir hedeflemeden, bağış veya kazanç kaygısı gütmeden kurulmuştur.
+            </p>
+            <a href="https://www.siberay.com/videolarimiz" class="btn btn-primary">İNCELE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Footer-->
+ <footer class="py-1 container-fluid p-1 bg-dark">
+  <div
+    class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+  >
+    <p class="text-white text-center">
+      © 2024 Company, Inc. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+
+<!-- 
+<div class="video-container">
+  
+</div> 
+-->
+
+<!-- <a href="#" class="btn btn-primary">Devamını Oku</a> -->
+
+
+<!-- <div class="container"></div> -->
+
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>

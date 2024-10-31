@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SİBER OYUN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #8832fa;
+        }
+        #quiz-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: 0 auto;
+            display: flex; /* Flexbox kullanımı */
+            flex-direction: column; /* Dikey hizalama */
+            justify-content: center; /* Dikey merkezleme */
+            align-items: center; /* Yatay merkezleme */
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .button.option1 {
+            background-color: rgb(27, 250, 7);
+        }
+        .button.option2 {
+            background-color: rgb(239, 2, 2);
+        }
+        #score {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #question-image {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>SİBER OYUN</h1>
+    <div id="quiz-container">
+        <p id="question">Soru burada görünecek</p>
+        <img id="question-image" src="" alt="Soru Resmi" />
+        <button class="button option1" onclick="chooseOption(0)">Seçenek 1</button>
+        <button class="button option2" onclick="chooseOption(1)">Seçenek 2</button>
+        <p id="score">Puan: 0</p>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "Sosyal medyada bir kişi hakkında yalanlar yaymak ya da utandırıcı fotoğraflar yayınlamak",
+                options: ["SİBER ZORBALIKTIR", "SİBER ZORBALIK DEĞİLDİR"],
+                correctOption: 0,
+                image: "./images/4.png" // Resim URL'si
+            },
+            {
+                question: "Mesajlaşma platformlarından incitici mesajlar ya da tehditler yollamak",
+                options: ["SİBER ZORBALIKTIR", "SİBER ZORBALIK DEĞİLDİR"],
+                correctOption: 0,
+                image: "./images/7.png" // Resim URL'si
+            },
+            {
+                question: "Başka birinin kimliğiyle başkalarına kötü mesajlar göndermek",
+                options: ["SİBER ZORBALIKTIR", "SİBER ZORBALIK DEĞİLDİR"],
+                correctOption: 0,
+                image: "./images/1.png" // Resim URL'si
+            },
+            {
+                question: "Zorbalığa maruz kaldığınızı düşünüyorsanız yapmanız gereken ilk iş anne-babanız, ailenizden yakın bir kişi, ya da güvendiğiniz başka bir yetişkin kişiden bu konuda yardım istemenizdir.",
+                options: ["DOĞRU", "YANLIŞ"],
+                correctOption: 0,
+                image: "./images/11.png" // Resim URL'si
+            },
+            {
+                question: "Bilmediğiniz kişilerden gelen metinleri, e-postaları, mesajları kim olduğunu anlamak için cevaplamalıyız.",
+                options: ["Evet", "Hayır"],
+                correctOption: 1,
+                image: "./images/3.png" // Resim URL'si
+            },
+            {
+                question: "Biri bana bir link gönderdiğinde buna hemen tıklamalıyım.",
+                options: ["DOĞRU", "YANLIŞ"],
+                correctOption: 1,
+                image: "./images/12.png" // Resim URL'si
+            },
+            {
+                question: "Sosyal medya hesaplarıma basit şifreler koymalıyım çünkü zor şifre belirlersem unutabilirim.",
+                options: ["DOĞRU", "YANLIŞ"],
+                correctOption: 1,
+                image: "./images/13.png" // Resim URL'si
+            },
+            {
+                question: "Gizlice fotoğraf ve videolarınız çekiliyor ve bunlar internet ortamlarında paylaşılıyorsa,",
+                options: ["SADECE BİR ŞAKA", "SİBER ZORBALIK"],
+                correctOption: 1,
+                image: "./images/foto.jfif" // Resim URL'si
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        // Sıradaki soruyu gösterme fonksiyonu
+        function showQuestion() {
+            if (currentQuestionIndex < questions.length) {
+                const currentQuestion = questions[currentQuestionIndex];
+                document.getElementById('question').textContent = currentQuestion.question;
+                const buttons = document.querySelectorAll('.button');
+                buttons.forEach((button, index) => {
+                    button.textContent = currentQuestion.options[index];
+                });
+                document.getElementById('question-image').src = currentQuestion.image; // Resmi ayarlama
+            } else {
+                // Oyun bittiğinde skoru ve sonuç mesajını göster
+                document.getElementById('question').textContent = 'Oyun bitti!';
+                document.getElementById('score').textContent = `Toplam Puan: ${score}`;
+                document.querySelector('.button.option1').style.display = 'none';
+                document.querySelector('.button.option2').style.display = 'none';
+                document.getElementById('question-image').style.display = 'none'; // Resmi gizle
+            }
+        }
+
+        // Kullanıcının seçimini işleme
+        function chooseOption(option) {
+            const currentQuestion = questions[currentQuestionIndex];
+
+            if (option === currentQuestion.correctOption) {
+                score++;
+            }
+
+            currentQuestionIndex++;
+            showQuestion();
+            document.getElementById('score').textContent = `Puan: ${score}`;
+        }
+
+        // İlk soruyu başlat
+        showQuestion();
+    </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SİBER ZORBALIK</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+        header {
+        background-color: #6f42c1; /* Başlık arka plan rengi */
+        color: #fff; /* Yazı rengi */
+        padding: 5px 0;
+        /* margin-bottom: 5px; */
+      }
+      h2 {
+        color: #6f42c1; /* Başlık rengi */
+        font-size: 2 rem; /* Başlık boyutu */
+        text-align: center; /* Başlık ortalama */
+        margin-bottom: 20px;
+      }
+      .nav-link,
+      .dropdown-item {
+        color: rgb(0, 0, 0); /* Varsayılan renk  */
+        transition: color 0.3s ease; /* Renk değişimi geçişi yumuşak olsun */
+      }
+
+      /* Fare ile üzerine gelindiğinde */
+      .nav-link:hover,
+      .dropdown-item:hover {
+        color: rgb(0, 179, 255); /* Üzerine gelindiğinde  */
+      }
+
+      /* Linke tıklandığında (aktif durumda) */
+      .nav-link:active,
+      .dropdown-item:active {
+        color: red; /* Tıklandığında kırmızı */
+      }
+
+      /* Link odaklandığında (örn. klavye ile) */
+      .nav-link:focus,
+      .dropdown-item:focus {
+        color: rgb(1, 254, 14); /* Odaklandığında */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header style="background-color: rgb(223, 250, 255);" class="text-dark text-center p-2 text-sm">
+        <h1 class="fs-10 fst-italic font-monospace">Filmlerden Öğren!</h1>
+    </header>
+    <!--NAVBAR-->
+    <nav
+    class="navbar navbar-expand-lg navbar-light"
+    style="background-color: #fff"
+  >
+    <div class="container-fluid">
+      <div class="img float-left">
+        <img src="./images/logo2.png" alt="" width="50" height="50" />
+      </div>
+      <a
+        class="navbar-brand"
+        style="display: flex; align-items: center"
+        href="projeson.html"
+        ><i class="fas fa-home"></i
+      ></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Siber Zorbalık
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="siberzorbalik.html">Siber Zorbalık Nedir?</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="siberzorbalikmagdur.html"
+                  >Siber Zorbalığa Maruz Kalınca Ne Yapmalıyız?</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="yardimcikaynaklar.html">Yardımcı Kaynaklar</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="playgame.html">Siber Oyun</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="movies.html">Siber Zorbalık Konulu Filmler</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h2>SİBER ZORBALIK, SİBER SUÇ VE SİBER GÜVENLİĞİN ÖNEMİNE YÖNELİK FİLM ÖNERİLERİ</h2>
+
+<!-- film tanıtım kartları -->
+
+  <div class="container my-5"> <!-- Kenarlara boşluk eklemek için 'container' sınıfı eklendi -->
+    <div class="row"> <!-- Kartları yatay olarak yerleştirmek için 'row' sınıfı eklendi -->
+      <div class="col-md-6"> <!-- Her bir karta 'col-md-6' sınıfı ekleyerek iki kartı yan yana hizalıyoruz -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./images/cyberbully.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Cyberbully</h5>
+                <p class="card-text">Cyberbully (2015) filmi, sosyal medyada siber zorbalık ve bunun gençler üzerindeki etkilerini ele alır. 
+                  Hikaye, 17 yaşındaki Casey'nin, bilgisayar korsanı tarafından sosyal medya hesapları üzerinden tehdit edilmesiyle başlar. 
+                  Korsan, Casey’nin sırlarını ifşa etmekle tehdit ederek onu zorlayıcı ve tehlikeli seçimler yapmaya mecbur bırakır. 
+                  Film, çevrimiçi zorbalığın psikolojik yıkıcılığını gözler önüne serer ve dijital dünyanın tehlikelerine karşı güçlü bir mesaj verir.</p>
+                <a href="https://youtu.be/Py4C67OUO1o" class="btn btn-primary">Fragman izle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6"> <!-- İkinci kart için 'col-md-6' -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./images/disconnect.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sanal Hayatlar / Disconnect </h5>
+                <p class="card-text">Ailesini aramaya vakit yaratmakta zorlanan işkolik bir avukat, sırları İnternet ortamına yayılan bir çift, 
+                  bir sınıf arkadaşına İnternet üzerinden kabadayılık taslayan çocuğunu yola getirmeye çalışan emekli bir polis memuru ve 
+                  kariyer peşinde koşan bir gazetecinin yetişkin sitelerindeki mücadelesi... 
+                  Tüm bu karakterleri aynı noktada buluşturan tek şey ise çağımızın buluşu İnternet! 
+                  Modern iletişimin yeni adı olan İnternet tüm köşeli halleriyle masaya yatırılırken birbirinden farklı bir grup insanın hayatı üzerinde yaptığı benzer etki vurgulanıyor.</p>
+                <a href="https://youtu.be/RMWA4i-Lmu4?si=nuSainpqOiswIEoC" class="btn btn-primary">Fragman izle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5"> <!-- Kenarlara boşluk eklemek için 'container' sınıfı eklendi -->
+    <div class="row"> <!-- Kartları yatay olarak yerleştirmek için 'row' sınıfı eklendi -->
+      <div class="col-md-6"> <!-- Her bir karta 'col-md-6' sınıfı ekleyerek iki kartı yan yana hizalıyoruz -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./images/nerve.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Nerve</h5>
+                <p class="card-text">Henry Joost ve Ariel Schulman’ın yönetmenliğini paylaştığı Nerve filmi, 
+                  kendisini dijital ortamda oynanan “Doğruluk mu Cesaret mi?” oyununun ortasında bulan bir lise öğrencisinin içine düştüğü zor durumu konu alıyor.
+                    <br><br>
+                  Emma Roberts, Dave Franco ve Emily Meade’nin başrollerini paylaştığı yapım; anonim bir “gözcüler” ekibi tarafından manipüle edilen lise öğrencisinin sıkıntılı hikâyesini takip ediyor.</p>
+                <a href="#" class="btn btn-primary">Fragman izle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6"> <!-- İkinci kart için 'col-md-6' -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./images/open windows.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Open Windows</h5>
+                <p class="card-text">Dönemin en heyecan verici oyuncularından biri olan Jill, İnternet'te yapılan bir yarışmada kendisiyle bir akşam yemeği kazanmış olan Nick ile yemek yemeyi reddeder. 
+                  Bunun üzerine Jill'in tanıtım kampanyasını yürüten Chord Nick'e yardım etmeyi teklif eder. Oyuncunun bilgisayarına ulaşarak her adımını izlemesini sağlar.
+                  Başta oldukça eğlenceli gibi görünen bu teklifin ilerleyen aşamalarında Nick kendisinin Chord'un hain planlarına ulaşmak için kullandığı bir kukla olduğunu anlayacaktır.</p>
+                <a href="https://youtu.be/_Qz7DDvTA-I?si=Zu_Ztx_NCgGKfZpN" class="btn btn-primary">Fragman izle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5"> <!-- Kenarlara boşluk eklemek için 'container' sınıfı eklendi -->
+    <div class="row"> <!-- Kartları yatay olarak yerleştirmek için 'row' sınıfı eklendi -->
+      <div class="col-md-6"> <!-- Her bir karta 'col-md-6' sınıfı ekleyerek iki kartı yan yana hizalıyoruz -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./images/Odd_girl_out.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Odd Girl Out</h5>
+                <p class="card-text">Odd Girl Out, 2005 yapımı bir dram filmi olup, genç kızların maruz kaldığı siber zorbalık ve akran zorbalığını ele alır. 
+                  Filmde, popüler bir öğrenci olan Vanessa Snyder, en yakın arkadaşı Stacey'den gelen psikolojik baskı ve dışlanma ile karşılaşır. 
+                  Stacey, Vanessa’ya zorbalık yapmaya başlar, onu sosyal çevresinden izole eder ve manipülatif oyunlar oynar. 
+                  Vanessa'nın bu durum karşısında yaşadığı duygusal çöküntü ve annesiyle birlikte gösterdiği mücadele, izleyiciyi zorbalığın etkileri üzerine düşünmeye sevk eder. 
+                  Film, zorbalığa uğrayan bir bireyin yaşadığı travmatik süreçleri çarpıcı bir şekilde yansıtır.</p>
+                <a href="https://youtu.be/rORqs6tEVkU?si=aSgoJoSR3UIs-pNY" class="btn btn-primary">Fragman izle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6"> <!-- İkinci kart için 'col-md-6' -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./images/the den.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">The Den</h5>
+                <p class="card-text">The Den (2013), Elizabeth isimli bir sosyal araştırmacının, "The Den" adlı bir video sohbet sitesindeki insanların davranışlarını incelemesiyle başlar. 
+                  Siteyi kullanırken kimliği belirsiz bir kişi tarafından şiddet içeren bir olaya tanık olur. Gizemli saldırgan, 
+                  Elizabeth’in hayatına sızar ve çevresindekileri hedef alarak korku dolu anlar yaşatır. Elizabeth, kendini çevrimiçi bir avın içinde bulur ve 
+                  dijital dünyanın karanlık yüzüyle yüzleşmek zorunda kalır. Film, internet gizliliği ve çevrimiçi güvenlik konularında etkileyici bir gerilim sunar.</p>
+                <a href="https://youtu.be/F9uLLF29c1w?si=6Ni_DI1P5UrZKbKW" class="btn btn-primary">Fragman izle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5"> <!-- Kenarlara boşluk eklemek için 'container' sınıfı eklendi -->
+    <div class="row"> <!-- Kartları yatay olarak yerleştirmek için 'row' sınıfı eklendi -->
+      <div class="col-md-6"> <!-- İkinci kart için 'col-md-6' -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./images/Untraceable.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Untraceable – Öldür.com</h5>
+                <p class="card-text">Untraceable izleyiciyi internetin karanlık sayfalarında konuk eden sürükleyici bir gerilim filmi. 
+                  Yapım merkezine siber suçlar bölümünde çalışan FBI ajanı Jennifer Marsh karakterini alıyor. 
+                  Marsh filmde teknolojiden anlayan bir seri katille, yüksek riskli bir kedi-fare oyununun ortasında kalıyor. 
+                  Katil cinayetlerini internetten canlı olarak yayınlıyor ve izlenme oranları arttıkça ölüm oranı da yükseliyor.
+                  <br><br>
+                  İnternete giderek daha fazla bağlanan bir toplumda dijital teknolojinin karmaşıklıklarını ve tehlikelerini vurgulayan yapım;
+                  siber suçlarla mücadelenin zorluklarını ve halkın çevrimiçi şiddete olan ilgisinin ahlaki sonuçlarını da ele alıyor.</p>
+                <a href="https://youtu.be/9ko_UAjOWjY?si=iCNSTHFz-dTgB7r0" class="btn btn-primary">Fragman izle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6"> <!-- Her bir karta 'col-md-6' sınıfı ekleyerek iki kartı yan yana hizalıyoruz -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./images/trust.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Trust</h5>
+                <p class="card-text">İnternette tanıştığı biriyle arkadaşlık kuran on dört yaşındaki genç kız, tanıştığı kişi ile telefon görüşmesi yapacak bir seviyeye gelmiştir. 
+                  Tanıştığı bu insanın asıl yüzü ortaya çıktığında onun aslında sandığı gibi biri olmadığını anlar ve çok yoğun bir depresyona girer.</p>
+                <a href="https://youtu.be/RlXj9VGHDaM" class="btn btn-primary">Fragman izle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+ <!--Footer-->
+ <footer class="py-1 container-fluid p-1 bg-dark">
+  <div
+    class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+  >
+    <p class="text-white text-center">
+      © 2024 Company, Inc. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>

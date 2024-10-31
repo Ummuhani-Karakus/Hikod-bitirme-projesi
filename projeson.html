@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SİBER ZORBALIK</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: #ffffff; /* Arka plan rengi */
+      }
+      header {
+        background-color: #6f42c1; /* Başlık arka plan rengi */
+        color: #fff; /* Yazı rengi */
+        padding: 5px 0;
+        /* margin-bottom: 5px; */
+      }
+      h2 {
+        color: #6f42c1; /* Başlık rengi */
+        font-size: 2 rem; /* Başlık boyutu */
+        text-align: center; /* Başlık ortalama */
+        margin-bottom: 20px;
+      }
+      .content {
+        margin-right: 20px; /* Resim ile metin arasında boşluk bırak */
+        font-size: 1.1rem; /* Metin boyutu */
+        line-height: 1.6; /* Satır yüksekliği */
+        color: #343a40; /* Metin rengi */
+      }
+      .float-left {
+        float: left; /* Resmi sola yasla */
+        margin-right: 20px; /* Resim ve metin arasında boşluk bırakır */
+      }
+      .highlight {
+        background-color: #e2e3e5; /* Arka plan rengi */
+        padding: 10px; /* İçerik boşluğu */
+        border-radius: 5px; /* Kenar yuvarlama */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+      }
+      /* Normal durumda linklerin rengi */
+      .nav-link,
+      .dropdown-item {
+        color: rgb(0, 0, 0); /* Varsayılan renk  */
+        transition: color 0.3s ease; /* Renk değişimi geçişi yumuşak olsun */
+      }
+
+      /* Fare ile üzerine gelindiğinde */
+      .nav-link:hover,
+      .dropdown-item:hover {
+        color: rgb(0, 179, 255); /* Üzerine gelindiğinde  */
+      }
+
+      /* Linke tıklandığında (aktif durumda) */
+      .nav-link:active,
+      .dropdown-item:active {
+        color: red; /* Tıklandığında kırmızı */
+      }
+
+      /* Link odaklandığında (örn. klavye ile) */
+      .nav-link:focus,
+      .dropdown-item:focus {
+        color: rgb(1, 254, 14); /* Odaklandığında */
+      }
+    </style>
+    <style>
+      #carouselExampleIndicators {
+        max-width: 1300px; /* Carousel'in genişliğini ayarlar */
+        margin: 0 auto; /* Ortalamak için */
+      }
+
+      .carousel-inner img {
+        width: 100%; /* Resimler carousel'in genişliğine sığdırılır */
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="text-center">
+      <h4>Ümmühani KARAKUŞ</h4>
+      <p class="fs-5 fst-italic">Dijital Farkındalık Projesi</p>
+    </header>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #fff"
+    >
+      <div class="container-fluid">
+        <div class="img float-left">
+          <img src="./images/logo2.png" alt="" width="50" height="50" />
+        </div>
+        <a
+          class="navbar-brand"
+          style="display: flex; align-items: center"
+          href="projeson.html"
+          ><i class="fas fa-home"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Siber Zorbalık
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="siberzorbalik.html"
+                    >Siber Zorbalık Nedir?</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="siberzorbalikmagdur.html"
+                    >Siber Zorbalığa Maruz Kalınca Ne Yapmalıyız?</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="yardimcikaynaklar.html">Yardımcı Kaynaklar</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="playgame.html">Siber Oyun</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html"
+                >Siber Zorbalık Konulu Filmler</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Slider-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="siberzorbalik.html">
+            <img src="./images/1.jpg" class="d-block w-100" alt="..." />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="playgame.html">
+            <img src="./images/2.jpg" class="d-block w-100" alt="..." />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="movies.html">
+            <img src="./images/3.jpg" class="d-block w-100 h-100" alt="..." />
+          </a>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Main Content-->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Article Section -->
+        <article class="col-12 d-flex align-items-start">
+          <div class="content">
+            <h2>Hakkımızda</h2>
+            <p>
+              Bu sayfa <strong>Hi-Kod 4.0</strong> programı, dijital farkındalık
+              konulu bitirme projesi kapsamında hazırlanmıştır. Bu sayfada
+              <em>"siber zorbalık"</em> konusuyla ilgili bazı bilgilere yer
+              verdik. Teknolojinin gelişmesine bağlı olarak siber suçlar ve
+              siber zorbalık oldukça arttı ve maalesef çoğu zorba yaptığının
+              zorbalık olduğunu dahi bilmiyor. Çoğu mağdur ise sessiz kalıyor,
+              yaşadıklarını anlatmaktan ve yardım istemekten korkuyor. 
+              Bu nedenle bu alanda bir farkındalık oluşturmak istedik. <br /><br />
+              <strong>Daha güvenli bir dünya için...</strong> <br />
+              Siber zorbalığın önlenmesi için birlikte çalışmalıyız! Bilinçli
+              bir toplum oluşturmak adına, farkındalık yaratmak ve bu konuda
+              harekete geçmek hepimizin sorumluluğudur. Unutmayın, dijital
+              dünyada herkesin güvenliğini sağlamak bizim elimizde!
+            </p>
+          </div>
+          <div class="col 2">
+            <img src="./images/9.png" alt="Siber Zorbalık" width="300" height="300" />
+          </div>
+        </article>
+      </div>
+    </div>
+    <!--Alan Tanıtım Kartları-->
+
+    <div class="container my-5">
+      <!-- 'container' sınıfı sayfa kenarlarına boşluk ekler -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="./images/siberkutu.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">ÖĞRENME KUTUSU</h5>
+              <p class="card-text">
+                Siber zorbalık bilgi kartları. 10 farklı kartın yer aldığı bu kutu size siber zorbalık ile ilgili hap bilgi sunuyor. <br><br>
+                İlk başta sayıların yazılı olduğu bazı kartlar göreceksiniz. Bu kartlara tıkladığınızda ise hap bilgiyi görebileceksiniz. <br><br>
+                <strong>TIKLA- ÖĞREN</strong> 
+              </p>
+              <a
+                href="https://wordwall.net/tr/embed/caa10444b586440eb75affcff83bd7ca?themeId=23&templateId=30&fontStackId=0"
+                class="btn btn-primary"
+                >BAŞLA</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/dijital tayfa.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dijital Tayfa - Komik Mi Şimdi</h5>
+              <p class="card-text">
+                TRT Çocuk kanalında yayınlanan "Rafadan Tayfa" çizgi filmi "Dijital Tayfa" olarak karşınızda. 
+                <br><br>
+                Sosyal medyada yapılan yorumların da bir tür siber zorbalığa dönüşebileceğini çok güzel bir örnekle gösteriyor.
+              </p>
+              <a href="https://youtu.be/XY_qIhWi5WM?si=Sr-_Dd-vaAY1ZGOy" class="btn btn-primary">İZLE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/duyuru.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">SiberAy | Siber Zorbalık Kamu Spotu</h5>
+              <p class="card-text">
+                Siberay, Emniyet Genel Müdürlüğü Siber Suçlarla Mücadele Daire Başkanlığı bünyesindeki toplumun geneline yayılan bir farkındalık projesi olarak hizmet etmektedir.
+              </p>
+              <a href="https://youtu.be/cWflhFMuLPo?si=30F1o4Z6K__uUF7F" class="btn btn-primary">İZLE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="py-1 container-fluid p-1 bg-dark">
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+      >
+        <p class="text-white text-center">
+          © 2024 Company, Inc. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
